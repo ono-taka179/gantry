@@ -106,7 +106,8 @@ get_releasever() {
 
 	local releasever
 
-	if ! releasever=$(grep -m 1 -oP '^releasever[ ]*=[ ]*\K' "$conf"); then
+#	if ! releasever=$(grep -m 1 -oP '^releasever[ ]*=[ ]*\K' "$conf"); then
+        if ! releasever=$(grep -m 1 '^releasever=' "$conf" | sed 's/releasever=//'); then
 		log_error "Could not get releasever from $conf"
 		return 1
 	fi
