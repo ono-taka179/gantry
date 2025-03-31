@@ -1,0 +1,13 @@
+[8.6-released-BaseOS]
+name=8.6-released-BaseOS
+mirrorlist=https://repo.dist.miraclelinux.net/miraclelinux/mirrorlist/8.6-released/x86_64/baseos
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.dist.miraclelinux.net/miraclelinux/8.4-released/RPM-GPG-KEY
+
+[8.6-released-AppStream]
+name=8.6-released-AppStream
+mirrorlist=https://repo.dist.miraclelinux.net/miraclelinux/mirrorlist/8.6-released/x86_64/appstream
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.dist.miraclelinux.net/miraclelinux/8.4-released/RPM-GPG-KEY
